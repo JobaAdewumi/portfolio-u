@@ -1,0 +1,50 @@
+.footer {
+	text-align: center;
+	background: rgba(12, 13, 14, 0.966);
+	color: $color-white;
+
+	&__logo {
+		color: $color-grey-light;
+		text-decoration: none;
+		font-size: 44px;
+		font-weight: lighter;
+		display: block;
+		background-position: center;
+		height: 54px;
+		background-repeat: no-repeat;
+		font-family: 'Times New Roman', Times, serif;
+		cursor: pointer;
+		margin: 20px 0;
+		@include respond(phone) {
+			font-size: 34px;
+		}
+
+		@include respond(med-phone) {
+			font-size: 24px;
+		}
+
+		@include respond(med-phone) {
+			height: 44px;
+		}
+	}
+
+	&__list {
+		justify-content: space-between;
+		padding: 20px 0;
+
+		&__item {
+			display: inline-block;
+			padding: 0 44px;
+
+			a {
+				text-decoration: none;
+				list-style: none;
+				color: white;
+			}
+		}
+	}
+
+	&__ending {
+		margin: 20px 0;
+	}
+}

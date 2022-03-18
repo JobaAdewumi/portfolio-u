@@ -1,8 +1,8 @@
 import React from 'react';
 
-const home = () => (
+const projects = () => (
    <div>
       </div>
 );
 
-export default home;
+export default projects;

@@ -1,80 +1,104 @@
-import React, { Fragment } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { connect } from "react-redux";
-import { logout } from "../actions/auth";
-import Alert from "./Alert";
-import PropTypes from "prop-types";
+import React, { Fragment, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import Alert from './Alert';
 
-const navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
-  const authLinks = (
-    <a className='navbar__top__auth__link' onClick={logout} href='#!'>
-      Logout
-    </a>
-  );
+const Navbar = () => {
+	// const menuIconContainer = document.querySelector(
+	// 	'nav .navbar__list__container'
+	// );
+	// const navContainer = document.querySelector('navbar');
 
-  const guestLinks = (
-    <Fragment>
-      <Link className='navbar__top__auth__link' to='/login'>
-        Login
-      </Link>
-      <Link className='navbar__top__auth__link' to='/signup'>
-        Sign up
-      </Link>
-    </Fragment>
-  );
+	const [isNavActive, setIsNavActive] = useState(false);
 
-  return (
-    <Fragment>
-      <nav className='navbar'>
-        <div className='navbar__top'>
-          <div className='navbar__top__logo'>
-            <Link className='navbar__top__logo__link' to='/'>
-              Realest Estate
-            </Link>
-          </div>
-          <div className='navbar__top__auth'>
-            {!loading && (
-              <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
-            )}
-          </div>
-        </div>
-        <div className='navbar__bottom'>
-          <li className='navbar__bottom__item'>
-            <NavLink className='navbar__bottom__item__link' to='/'>
-              Home
-            </NavLink>
-          </li>
-          <li className='navbar__bottom__item'>
-            <NavLink
-              className='navbar__bottom__item__link'
-              to='/listings'>
-              Listings
-            </NavLink>
-          </li>
-          <li className='navbar__bottom__item'>
-            <NavLink className='navbar__bottom__item__link' to='/about'>
-              About
-            </NavLink>
-          </li>
-          <li className='navbar__bottom__item'>
-            <NavLink className='navbar__bottom__item__link' to='/contact'>
-              Contact
-            </NavLink>
-          </li>
-        </div>
-      </nav>
-      <Alert />
-    </Fragment>
-  );
+	const nav = () => {
+		console.log('ugg');
+		setIsNavActive(true);
+	};
+
+	const nave = () => {
+		console.log('fewww');
+		setIsNavActive(false);
+	};
+
+	// menuIconContainer.addEventListener('click', () => {
+	// 	navContainer.classList.toggle('active');
+	// });
+
+	// const authLinks = (
+	//   <a className='navbar__top__auth__link' onClick={logout} href='#!'>
+	//     Logout
+	//   </a>
+	// );
+
+	// const guestLinks = (
+	//   <Fragment>
+	//     <Link className='navbar__top__auth__link' to='/login'>
+	//       Login
+	//     </Link>
+	//     <Link className='navbar__top__auth__link' to='/signup'>
+	//       Sign up
+	//     </Link>
+	//   </Fragment>
+	// );
+
+	return (
+		<Fragment>
+			<nav className={`${isNavActive ? 'active' : 'navbar'}`}>
+				<ul className={`${isNavActive ? 'active' : 'navbar'}__list`}>
+					<li>
+						<Link
+							className={`${isNavActive ? 'active' : 'navbar'}__list__logo`}
+							to='/'>
+							JOBA ADEWUMI
+						</Link>
+					</li>
+					<li>
+						<div
+							className={`${
+								isNavActive ? 'active' : 'navbar'
+							}__list__container`}
+							onClick={isNavActive ? nave : nav}>
+							<div
+								className={`${
+									isNavActive ? 'active' : 'navbar'
+								}__list__container__icon`}>
+								<span
+									style={{ background: 'black' }}
+									className={`${
+										isNavActive ? 'active' : 'navbar'
+									}__list__container__icon__line-1`}></span>
+								<span
+									className={`${
+										isNavActive ? 'active' : 'navbar'
+									}__list__container__icon__line-2`}></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<ul className={`${isNavActive ? 'active' : 'navbar'}__items`}>
+					<li>
+						<NavLink
+							className={`${isNavActive ? 'active' : 'navbar'}__items__item`}
+							to='/projects'>
+							Projects
+						</NavLink>
+						<NavLink
+							className={`${isNavActive ? 'active' : 'navbar'}__items__item`}
+							to='/contact'>
+							Contact me
+						</NavLink>
+						<NavLink
+							className={`${isNavActive ? 'active' : 'navbar'}__items__item`}
+							to='/codingrepublic'>
+							Coding Republic
+						</NavLink>
+					</li>
+				</ul>
+			</nav>
+			<Alert />
+		</Fragment>
+	);
 };
 
-navbar.propTypes = {
-  logout: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  auth: state.auth,
-});
-
-export default connect(mapStateToProps, { logout })(navbar);
+export default Navbar;
