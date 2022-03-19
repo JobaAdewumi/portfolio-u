@@ -44,6 +44,14 @@
 			background-repeat: no-repeat;
 			font-family: 'Times New Roman', Times, serif;
 			cursor: pointer;
+			transition-delay: 400ms;
+			transition-duration: 400ms;
+
+			&:hover {
+				color: rgb(75, 158, 151);
+				transition-delay: 400ms;
+				transition-duration: 400ms;
+			}
 		}
 
 		li &__container {
