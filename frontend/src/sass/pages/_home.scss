@@ -1,14 +1,222 @@
 .home {
-    &__form {
-        margin-top: 4rem;
-        margin-bottom: 6rem;
-    }
+	&__section {
+		&__text {
+			width: 100%;
+			&__container {
+				padding-top: 100px;
+				padding-bottom: 0;
+				padding-left: 120px;
+				padding-right: 120px;
+				@media (max-width: 663px) {
+					padding-left: 57px;
+					padding-right: 57px;
+				}
+				@media (max-width: 468px) {
+					padding-left: 25px;
+					padding-right: 25px;
+				}
+				@media (max-width: 312px) {
+					padding-top: 65px;
+				}
+				// background-color: rgba(28, 42, 54, 0.555);
 
-    &__listings {
-        margin-bottom: 4rem;
-    }
+				&__content {
+					background-color: rgba(28, 42, 54, 0.355);
+					padding-left: 30px;
+					padding-right: 30px;
+					padding-top: 30px;
+					padding-bottom: 30px;
 
-    &__pagination {
-        margin-bottom: 6rem;
-    }
+
+					&__summary {
+						color: #e7dcdc;
+						margin-bottom: 20px;
+						font-size: 23px
+					}
+					&__header {
+						font-size: 44px;
+						text-align: center;
+						font-family: serif;
+						color: aliceblue;
+						margin-top: 25px;
+						margin-bottom: 25px;
+						@media (max-width: 464px) {
+							font-size: 26px;
+						}
+					}
+					&__skill-list {
+						&__item {
+							&__text {
+								font-size: 23px;
+									color: #cfcfcf;
+							}
+							&__bar {
+								margin-top: 10px;
+								height: 20px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								&__progress-1 {
+									background-color: rgb(197, 2, 2);
+									height: 20px;
+									border-radius: 10px;
+									width: 90%;
+								}
+								&__progress-2 {
+									background-color: rgb(2, 163, 2);
+									height: 20px;
+									border-radius: 10px;
+									width: 90%;
+								}
+								&__progress-3 {
+									background-color: rgb(8, 8, 167);
+									height: 20px;
+									border-radius: 10px;
+									width: 65%;
+								}
+								&__progress-4 {
+									background-color: rgb(165, 165, 3);
+									height: 20px;
+									border-radius: 10px;
+									width: 70%;
+								}
+								&__progress-5 {
+									background-color: rgb(138, 100, 138);
+									height: 20px;
+									border-radius: 10px;
+									width: 79%;
+								}
+								&__progress-6 {
+									background-color: rgb(6, 118, 146);
+									height: 20px;
+									border-radius: 10px;
+									width: 78%;
+								}
+							}
+						}
+					}
+					&__language-list {
+						&__item {
+							&__text {
+								font-size: 23px;
+									color: #cfcfcf;
+							}
+							&__bar {
+								margin-top: 10px;
+								height: 20px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								&__progress-1 {
+									background-color: rgb(197, 161, 2);
+									height: 20px;
+									border-radius: 10px;
+									width: 90%;
+								}
+								&__progress-2 {
+									background-color: rgb(2, 117, 163);
+									height: 20px;
+									border-radius: 10px;
+									width: 90%;
+								}
+								&__progress-3 {
+									background-color: rgb(167, 8, 82);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+								&__progress-4 {
+									background-color: rgb(165, 68, 3);
+									height: 20px;
+									border-radius: 10px;
+									width: 87%;
+								}
+								&__progress-5 {
+									background-color: rgb(115, 100, 138);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+								&__progress-6 {
+									background-color: rgb(6, 118, 146);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+								&__progress-7 {
+									background-color: rgb(6, 146, 92);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+								&__progress-8 {
+									background-color: rgb(104, 146, 6);
+									height: 20px;
+									border-radius: 10px;
+									width: 78%;
+								}
+							}
+						}
+					}
+					&__tech-list {
+						&__item {
+							&__text {
+								font-size: 23px;
+									color: #cfcfcf;
+							}
+							&__bar {
+								margin-top: 10px;
+								height: 20px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								&__progress-1 {
+									background-color: rgb(197, 161, 2);
+									height: 20px;
+									border-radius: 10px;
+									width: 90%;
+								}
+								&__progress-2 {
+									background-color: rgb(2, 117, 163);
+									height: 20px;
+									border-radius: 10px;
+									width: 90%;
+								}
+								&__progress-3 {
+									background-color: rgb(167, 8, 82);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+								&__progress-4 {
+									background-color: rgb(165, 68, 3);
+									height: 20px;
+									border-radius: 10px;
+									width: 87%;
+								}
+								&__progress-5 {
+									background-color: rgb(115, 100, 138);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+								&__progress-6 {
+									background-color: rgb(6, 118, 146);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+								&__progress-7 {
+									background-color: rgb(6, 146, 92);
+									height: 20px;
+									border-radius: 10px;
+									width: 80%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

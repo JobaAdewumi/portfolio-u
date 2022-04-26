@@ -29,6 +29,14 @@ body {
 	@include respond(phone) {
 		padding: 0;
 	}
+	// background-color: rgba(28, 42, 54, 0.355);
+	background: url(../../assets/images/Joba.jpg);
+	background-size: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	height: 292vh;
+	background-repeat: no-repeat;
 }
 
 ::selection {

@@ -7,20 +7,21 @@ const footer = () => {
             <Link to='/' className='footer__logo'>JOBA ADEWUMI</Link>
 			<ul className='footer__list'>
 				<li className='footer__list__item'>
-					<a href='#' className='footer__list__item__linkedin'>
+					<a href='https://www.linkedin.com/in/joba-adewumi' className='footer__list__item__linkedin'>
 						Linkedin
 					</a>
 				</li>
 				<li className='footer__list__item'>
-					<a href='#' className='footer__list__item__twitter'>
+					<a href='https://twitter.com/_Jobaa' className='footer__list__item__twitter'>
 						Twitter
 					</a>
 				</li>
 				<li className='footer__list__item'>
-					<a href='#' className='footer__list__item__github'>
+					<a href='https://www.github.com/JobaAdewumi' className='footer__list__item__github'>
 						Github
 					</a>
 				</li>
+				{/* TODO: Remmember to put the whatsapp link */}
 				<li className='footer__list__item'>
 					<a href='#' className='footer__list__item__whatsapp'>
 						WhatsApp

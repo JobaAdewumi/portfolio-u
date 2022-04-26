@@ -1,7 +1,10 @@
 .footer {
 	text-align: center;
-	background: rgba(12, 13, 14, 0.966);
+	background: black;
 	color: $color-white;
+	right: 0;
+	left: 0;
+	bottom: 0;
 
 	&__logo {
 		color: $color-grey-light;
@@ -17,6 +20,7 @@
 		margin: 20px 0;
 		transition-delay: 400ms;
 		transition-duration: 400ms;
+
 		@include respond(phone) {
 			font-size: 34px;
 		}
@@ -27,6 +31,7 @@
 
 		@include respond(med-phone) {
 			height: 44px;
+			line-height: 3.1;
 		}
 
 		&:hover {

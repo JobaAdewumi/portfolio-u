@@ -53,12 +53,12 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li>
-						<div
+						<div style={{ display: 'none' }}
 							className={`${
 								isNavActive ? 'active' : 'navbar'
 							}__list__container`}
 							onClick={isNavActive ? nave : nav}>
-							<div
+							<div style={{ display: 'none' }}
 								className={`${
 									isNavActive ? 'active' : 'navbar'
 								}__list__container__icon`}>

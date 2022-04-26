@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const layout = (props) => (
-	<div>
+	<div className="layout">
 		<Navbar />
 		{props.children}
 		<Footer />
