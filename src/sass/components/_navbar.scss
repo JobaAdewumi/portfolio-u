@@ -6,11 +6,17 @@
 	left: 0;
 	top: 0;
 	right: 0;
+	padding: 0 40px;
+
+	@media (max-width: 349px) {
+		height: 108px;
+		padding: 0 30px;
+	}
 
 	nav {
 		width: 1300px;
 		margin: 0 auto;
-		padding: 0 8px;
+		padding: 0 20px;
 		height: 100%;
 	}
 
@@ -55,26 +61,50 @@
 		}
 
 		li &__container {
-			width: 60px;
+			width: 40px;
 			height: 54px;
 			display: flex;
 			align-items: center;
 			cursor: pointer;
+			@media (max-width: 349px) {
+				height: 80px;
+			}
 
 			&__icon {
 				position: relative;
 				width: 100%;
 
-				&__line-1 {
+				span {
+					background-color: $color-black;
+				}
+
+				&__line-1,
+				&__line-2 {
+					display: block;
+					cursor: pointer;
+					width: 35px;
 					position: absolute;
-					height: 4px;
+					height: 5px;
+					color: $color-black;
 					background: $color-black;
 					transition-property: transform, top;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
 				}
 
+				&__line-1 {
+					display: block;
+					position: absolute;
+					height: 4px;
+					background: $color-black;
+					color: $color-black;
+					transition-property: transform, top;
+					transition-delay: 0ms, 160ms;
+					transition-duration: 200ms;
+				}
+
 				&__line-2 {
+					display: block;
 					position: absolute;
 					height: 4px;
 					background: $color-black;
@@ -111,7 +141,7 @@
 		li {
 			width: 100%;
 			padding: 0 62px;
-			text-align: center;
+			text-align: left;
 		}
 
 		li:first-child {
@@ -138,7 +168,7 @@
 	}
 }
 
-.active {
+.nav-active {
 	background-color: transparent;
 	height: 54px;
 	z-index: 300;
@@ -146,6 +176,11 @@
 	left: 0;
 	top: 0;
 	right: 0;
+	padding: 0 40px;
+	@media (max-width: 349px) {
+		height: 108px;
+		padding: 0 30px;
+	}
 
 	nav {
 		width: 1300px;
@@ -166,6 +201,13 @@
 			text-decoration: none;
 			font-size: 44px;
 			font-weight: lighter;
+			@include respond(phone) {
+				font-size: 34px;
+			}
+
+			@include respond(med-phone) {
+				font-size: 33px;
+			}
 		}
 
 		&__logo {
@@ -176,14 +218,25 @@
 			background-repeat: no-repeat;
 			font-family: 'Times New Roman', Times, serif;
 			cursor: pointer;
+			transition-delay: 400ms;
+			transition-duration: 400ms;
+
+			&:hover {
+				color: rgb(75, 158, 151);
+				transition-delay: 400ms;
+				transition-duration: 400ms;
+			}
 		}
 
 		li &__container {
-			width: 60px;
+			width: 40px;
 			height: 54px;
 			display: flex;
 			align-items: center;
 			cursor: pointer;
+			@media (max-width: 349px) {
+				height: 80px;
+			}
 
 			&__icon {
 				position: relative;
@@ -195,6 +248,9 @@
 
 				&__line-1,
 				&__line-2 {
+					display: block;
+					cursor: pointer;
+					width: 35px;
 					position: absolute;
 					height: 4px;
 					color: $color-black;
@@ -244,7 +300,7 @@
 		li {
 			width: 100%;
 			padding: 0 62px;
-			text-align: center;
+			text-align: left;
 		}
 
 		li:first-child {
@@ -257,16 +313,23 @@
 			flex-direction: column;
 			border-bottom: 2px solid #616161;
 			width: 100%;
-			font-size: 17px;
+			font-size: 25px;
 			transform: translateY(0);
 			opacity: 1;
 			transition: all 700ms ease;
 			text-decoration: none;
-			color: $color-black;
+			color: $color-white;
 
 			&:hover {
 				color: $color-primary;
 			}
 		}
+	}
+}
+
+.active {
+	color: $color-primary;
+	&:hover {
+		color: $color-white;
 	}
 }
