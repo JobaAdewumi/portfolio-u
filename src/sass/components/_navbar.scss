@@ -8,9 +8,9 @@
 	right: 0;
 	padding: 0 40px;
 
-	@media (max-width: 349px) {
+	@media (max-width: 405px) {
 		height: 108px;
-		padding: 0 30px;
+		padding: 0 10px;
 	}
 
 	nav {
@@ -28,7 +28,7 @@
 
 		a,
 		Link {
-			color: $color-black;
+			color: $color-accent;
 			text-decoration: none;
 			font-size: 44px;
 			font-weight: lighter;
@@ -47,11 +47,15 @@
 			display: block;
 			background-position: center;
 			height: 54px;
+			padding-right: 7px;
 			background-repeat: no-repeat;
 			font-family: 'Times New Roman', Times, serif;
 			cursor: pointer;
 			transition-delay: 400ms;
 			transition-duration: 400ms;
+			@media screen and (max-width: 600px) {
+				padding-top: 4px;
+			}
 
 			&:hover {
 				color: rgb(75, 158, 151);
@@ -66,7 +70,7 @@
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			@media (max-width: 349px) {
+			@media (max-width: 317px) {
 				height: 80px;
 			}
 
@@ -75,7 +79,7 @@
 				width: 100%;
 
 				span {
-					background-color: $color-black;
+					background-color: $color-accent;
 				}
 
 				&__line-1,
@@ -85,8 +89,8 @@
 					width: 35px;
 					position: absolute;
 					height: 5px;
-					color: $color-black;
-					background: $color-black;
+					color: $color-accent;
+					background: $color-accent;
 					transition-property: transform, top;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
@@ -96,8 +100,8 @@
 					display: block;
 					position: absolute;
 					height: 4px;
-					background: $color-black;
-					color: $color-black;
+					background: $color-accent;
+					color: $color-accent;
 					transition-property: transform, top;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
@@ -107,7 +111,7 @@
 					display: block;
 					position: absolute;
 					height: 4px;
-					background: $color-black;
+					background: $color-accent;
 					transition-property: transform, top;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
@@ -177,9 +181,10 @@
 	top: 0;
 	right: 0;
 	padding: 0 40px;
-	@media (max-width: 349px) {
+
+	@media (max-width: 405px) {
 		height: 108px;
-		padding: 0 30px;
+		padding: 0 10px;
 	}
 
 	nav {
@@ -220,6 +225,10 @@
 			cursor: pointer;
 			transition-delay: 400ms;
 			transition-duration: 400ms;
+			padding-right: 7px;
+			@media screen and (max-width: 600px) {
+				padding-top: 4px;
+			}
 
 			&:hover {
 				color: rgb(75, 158, 151);
@@ -234,7 +243,7 @@
 			display: flex;
 			align-items: center;
 			cursor: pointer;
-			@media (max-width: 349px) {
+			@media (max-width: 317px) {
 				height: 80px;
 			}
 
@@ -243,7 +252,7 @@
 				width: 100%;
 
 				span {
-					background-color: $color-black;
+					background-color: $color-accent;
 				}
 
 				&__line-1,
@@ -253,8 +262,8 @@
 					width: 35px;
 					position: absolute;
 					height: 4px;
-					color: $color-black;
-					background: $color-black;
+					color: $color-accent;
+					background: $color-accent;
 					transition-property: transform, top;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
@@ -266,8 +275,8 @@
 					transition-property: top, transform;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
-					background: $color-grey-dark;
-					color: $color-grey-dark;
+					background: $color-accent;
+					color: $color-accent;
 				}
 
 				&__line-2 {
@@ -276,8 +285,8 @@
 					transition-property: top, transform;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
-					background: $color-grey-dark;
-					color: $color-grey-dark;
+					background: $color-accent;
+					color: $color-accent;
 				}
 			}
 		}

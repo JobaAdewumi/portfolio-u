@@ -60,7 +60,6 @@ const Navbar = () => {
 									isNavActive ? 'nav-active' : 'navbar'
 								}__list__container__icon`}>
 								<span
-									style={{ background: 'black' }}
 									className={`${
 										isNavActive ? 'nav-active' : 'navbar'
 									}__list__container__icon__line-1`}></span>
@@ -85,11 +84,11 @@ const Navbar = () => {
 							to='/contact'>
 							Contact me
 						</NavLink>
-						<NavLink
+						{/* <NavLink
 							className={`${isNavActive ? 'nav-active' : 'navbar'}__items__item`}
 							to='/codingrepublic'>
 							Coding Republic
-						</NavLink>
+						</NavLink> */}
 					</li>
 				</ul>
 			</nav>

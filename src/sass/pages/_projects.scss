@@ -1,0 +1,131 @@
+.projects {
+	margin-top: 30px;
+	&__section {
+
+		&__container {
+			padding-top: 26px;
+			padding-bottom: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+
+
+
+			&__content {
+				border-radius: 24px;
+				background-color: rgba(28, 42, 54, 0.355);
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 18px;
+				padding-bottom: 30px;
+				&__header {
+					font-size: 50px;
+					font-family: 'Times New Roman', Times, serif;
+					color: $color-accent;
+					margin-bottom: 5px;
+				}
+
+				&__links {
+					padding-left: 10px;
+					font-size: 20px;
+					color: $color-quaternary;
+				}
+
+				&__name-back {
+                    background-color: rgba(22, 22, 22, 0.83);
+					&__name {
+						padding-top: 15px;
+						padding-bottom: 10px;
+						font-size: 50px;
+						text-align: center;
+						font-weight: 600;
+						background-color: #001118;
+						background-image: linear-gradient(to top, #8fb99b 0%, #001118 100%);
+						background-size: 100%;
+						-webkit-background-clip: text;
+						-moz-background-clip: text;
+						background-clip: text;
+						-webkit-text-fill-color: transparent;
+						-moz-text-fill-color: transparent;
+					}
+				}
+
+				&__header-image {
+					display: flex;
+					justify-content: center;
+					margin: 10px 10px;
+					width: 70%;
+					height: 400px;
+				}
+
+				&__about {
+					color: white;
+					margin-top: 500px;
+					background-color: rgba(22, 22, 22, 0.83);
+
+					&__header {
+						font-size: 43px;
+						font-family: 'Times New Roman', Times, serif;
+						margin-left: 15px;
+					}
+
+					&__text {
+						padding: 0 17px;
+						font-size: 22px;
+					}
+
+					&__link {
+						padding: 0 17px;
+						font-size: 22px;
+						color: purple;
+						text-decoration: underline;
+					}
+
+					&__img-container {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-evenly;
+						align-items: center;
+
+						&__image {
+							margin: 10px 10px;
+							// width: 400px;
+							// height: 400px;
+						}
+					}
+				}
+
+				&__first {
+					background: url(../../assets/images/projects/all-status-saver.jpg);
+					background-attachment: inherit;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					margin-top: 20px;
+				}
+				&__second {
+					background: url(../../assets/images/projects/linkedin.png);
+					background-attachment: inherit;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					margin-top: 20px;
+				}
+				&__third {
+					background: url(../../assets/images/projects/unit-converter.jpg);
+					background-attachment: inherit;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					margin-top: 20px;
+				}
+				&__fourth {
+					background: url(../../assets/images/projects/mcf-1.png);
+					background-attachment: inherit;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					margin-top: 20px;
+				}
+
+				&__item {
+				}
+			}
+		}
+	}
+}
