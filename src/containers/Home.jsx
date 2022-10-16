@@ -4,6 +4,13 @@ const home = () => {
 	return (
 		<div className='home'>
 			<section className='home__section'>
+				<div className='home__section__image'>
+					<img
+						className='home__section__image__item'
+						src={require('../assets/images/Joba.jpg')}
+						alt=''
+					/>
+				</div>
 				<div className='home__section__text'>
 					<section className='home__section__text__container'>
 						<section className='home__section__text__container__content'>
@@ -17,8 +24,15 @@ const home = () => {
 								photography, snapping images from landscape to portraits. He is
 								also a Graphics designer and Video editor.
 							</p>
-							<iframe src="https://anchor.fm/joba-adewumi4/embed" height="102px" width="100%" frameBorder="0" scrolling="no"></iframe>
-							<iframe style={{ marginTop: '20px', borderRadius: '12px' }} src="https://open.spotify.com/embed/show/4fIBS5rikdEvGh6tSJ93zW?utm_source=generator&t=0" width="100%" height="232" frameBorder="0" allowFullScreen="no" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+							<iframe
+								style={{ marginTop: '20px', borderRadius: '12px' }}
+								src='https://open.spotify.com/embed/show/4fIBS5rikdEvGh6tSJ93zW?utm_source=generator&t=0'
+								width='100%'
+								height='232'
+								frameBorder='0'
+								allowFullScreen='no'
+								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 							<h1 className='home__section__text__container__content__header'>
 								SKILLS
 							</h1>

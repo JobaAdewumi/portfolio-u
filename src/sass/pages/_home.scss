@@ -1,37 +1,56 @@
 .home {
 	&__section {
+		&__image {
+			display: flex;
+			justify-content: right;
+			padding: 10px 40px;
+			@media screen and (max-width: 403px) {
+				justify-content: center;
+				padding: 10px 10px
+			}
+
+			&__item {
+				height: 73vh;
+				@media screen and (max-width: 601px) {
+					height: 44vh;
+				}
+				@media screen and (max-width: 403px) {
+					height: 33vh;
+				}
+			}
+		}
 		&__text {
 			width: 100%;
 			&__container {
-				padding-top: 100px;
+				padding-top: 26px;
 				padding-bottom: 0;
-				padding-left: 120px;
-				padding-right: 120px;
-				@media (max-width: 663px) {
-					padding-left: 57px;
-					padding-right: 57px;
-				}
-				@media (max-width: 468px) {
-					padding-left: 25px;
-					padding-right: 25px;
-				}
-				@media (max-width: 312px) {
-					padding-top: 65px;
-				}
+				padding-left: 10px;
+				padding-right: 10px;
+				// @media (max-width: 663px) {
+				// 	padding-left: 57px;
+				// 	padding-right: 57px;
+				// }
+				// @media (max-width: 468px) {
+				// 	padding-left: 25px;
+				// 	padding-right: 25px;
+				// }
+				// @media (max-width: 312px) {
+				// 	padding-top: 65px;
+				// }
 				// background-color: rgba(28, 42, 54, 0.555);
 
 				&__content {
+					border-radius: 24px;
 					background-color: rgba(28, 42, 54, 0.355);
 					padding-left: 30px;
 					padding-right: 30px;
-					padding-top: 30px;
+					padding-top: 18px;
 					padding-bottom: 30px;
-
 
 					&__summary {
 						color: #e7dcdc;
 						margin-bottom: 20px;
-						font-size: 23px
+						font-size: 23px;
 					}
 					&__header {
 						font-size: 44px;
@@ -48,7 +67,7 @@
 						&__item {
 							&__text {
 								font-size: 23px;
-									color: #cfcfcf;
+								color: #cfcfcf;
 							}
 							&__bar {
 								margin-top: 10px;
@@ -78,7 +97,7 @@
 									background-color: rgb(165, 165, 3);
 									height: 20px;
 									border-radius: 10px;
-									width: 70%;
+									width: 85%;
 								}
 								&__progress-5 {
 									background-color: rgb(138, 100, 138);
@@ -99,7 +118,7 @@
 						&__item {
 							&__text {
 								font-size: 23px;
-									color: #cfcfcf;
+								color: #cfcfcf;
 							}
 							&__bar {
 								margin-top: 10px;
@@ -123,13 +142,13 @@
 									background-color: rgb(167, 8, 82);
 									height: 20px;
 									border-radius: 10px;
-									width: 80%;
+									width: 90%;
 								}
 								&__progress-4 {
 									background-color: rgb(165, 68, 3);
 									height: 20px;
 									border-radius: 10px;
-									width: 87%;
+									width: 90%;
 								}
 								&__progress-5 {
 									background-color: rgb(115, 100, 138);
@@ -141,19 +160,19 @@
 									background-color: rgb(6, 118, 146);
 									height: 20px;
 									border-radius: 10px;
-									width: 80%;
+									width: 83%;
 								}
 								&__progress-7 {
 									background-color: rgb(6, 146, 92);
 									height: 20px;
 									border-radius: 10px;
-									width: 80%;
+									width: 86%;
 								}
 								&__progress-8 {
 									background-color: rgb(104, 146, 6);
 									height: 20px;
 									border-radius: 10px;
-									width: 78%;
+									width: 82%;
 								}
 							}
 						}
@@ -162,7 +181,7 @@
 						&__item {
 							&__text {
 								font-size: 23px;
-									color: #cfcfcf;
+								color: #cfcfcf;
 							}
 							&__bar {
 								margin-top: 10px;
@@ -174,7 +193,7 @@
 									background-color: rgb(197, 161, 2);
 									height: 20px;
 									border-radius: 10px;
-									width: 90%;
+									width: 92%;
 								}
 								&__progress-2 {
 									background-color: rgb(2, 117, 163);
@@ -186,7 +205,7 @@
 									background-color: rgb(167, 8, 82);
 									height: 20px;
 									border-radius: 10px;
-									width: 80%;
+									width: 86%;
 								}
 								&__progress-4 {
 									background-color: rgb(165, 68, 3);
@@ -198,13 +217,13 @@
 									background-color: rgb(115, 100, 138);
 									height: 20px;
 									border-radius: 10px;
-									width: 80%;
+									width: 82%;
 								}
 								&__progress-6 {
 									background-color: rgb(6, 118, 146);
 									height: 20px;
 									border-radius: 10px;
-									width: 80%;
+									width: 87%;
 								}
 								&__progress-7 {
 									background-color: rgb(6, 146, 92);
