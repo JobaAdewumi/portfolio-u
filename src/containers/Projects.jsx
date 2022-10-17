@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import React from 'react';
 
 const Projects = () => {
@@ -7,7 +6,7 @@ const Projects = () => {
 		0: {
 			name: 'All Status Saver',
 			about:
-				'The All Status Saver project is a mobile application created with Flutter.',
+				"The All Status Saver project is a mobile application created with Flutter. The App is a WhatsApp Status Saver, other social media's will be added later on.",
 			timelineBeginning: 'August 1 2022',
 			timelineEnd: 'To Date',
 			githubLink: 'private',
@@ -47,7 +46,7 @@ const Projects = () => {
 			timelineBeginning: 'December 13 2021',
 			timelineEnd: 'February 2 2022',
 			githubLink: 'private',
-			inBeta: false,
+			inBeta: true,
 			packaged: true,
 			downloadLink: '',
 			backgroundImageLink: '../assets/images/projects/all-status-saver.jpg',
@@ -117,6 +116,41 @@ const Projects = () => {
 							href={`${e.githubLink}`}>
 							Github Link
 						</a>
+					)}
+
+					{e.inBeta && e.githubLink === 'private' ? (
+						<>
+							<h2 className='projects__section__container__content__about__header'>
+								In Beta:
+							</h2>
+							<p className='projects__section__container__content__about__text'>
+								This Project is in closed Beta, once it is available you will be
+								able to use the project.
+							</p>
+						</>
+					) : e.inBeta && e.githubLink !== 'private' ? (
+						<>
+							<h2 className='projects__section__container__content__about__header'>
+								In Beta:
+							</h2>
+							<p className='projects__section__container__content__about__text'>
+								This Project is in open Beta, you can download the project here
+								if it is packaged or you can check the Github link to use the
+								project.
+							</p>
+
+							{e.downloadLink !== '' ? (
+								<a
+									className='projects__section__container__content__about__link'
+									href={`${e.downloadLink}`}>
+									Download Link
+								</a>
+							) : (
+								<></>
+							)}
+						</>
+					) : (
+						<></>
 					)}
 
 					<h2 className='projects__section__container__content__about__header'>
