@@ -1,5 +1,6 @@
 import { send } from 'emailjs-com';
 import React, { useState } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const Contact = () => {
@@ -49,36 +50,31 @@ const Contact = () => {
 						<h2 className='contact__section__container__content__name'>
 							Linkedin
 						</h2>
-						<a
-							href='https://linkedin.com/in/joba-adewumi'
-							className='contact__section__container__content__item'
-							target='_blank'
-							rel='noreferrer'>
-							Linkedin Profile &rarr;
-						</a>
+
+						<span className='contact__section__container__content__span'>
+							<FaLinkedin className='podcast__section__container__content__span__icon'></FaLinkedin>
+							<a
+								href='https://linkedin.com/in/joba-adewumi'
+								className='contact__section__container__content__item'
+								target='_blank'
+								rel='noreferrer'>
+								Linkedin Profile &rarr;
+							</a>
+						</span>
 
 						<h2 className='contact__section__container__content__name'>
 							Github
 						</h2>
-						<a
-							href='https://github.com/JobaAdewumi'
-							className='contact__section__container__content__item'
-							target='_blank'
-							rel='noreferrer'>
-							Github &rarr;
-						</a>
-
-						{/* <h2 className='contact__section__container__content__name'></h2>
-					<a
-						href='/'
-						className='contact__section__container__content__item'
-						target='_blank'></a>
-
-					<h2 className='contact__section__container__content__name'></h2>
-					<a
-						href='/'
-						className='contact__section__container__content__item'
-						target='_blank'></a> */}
+						<span className='contact__section__container__content__span'>
+							<FaGithub className='podcast__section__container__content__span__icon'></FaGithub>
+							<a
+								href='https://github.com/JobaAdewumi'
+								className='contact__section__container__content__item'
+								target='_blank'
+								rel='noreferrer'>
+								Github &rarr;
+							</a>
+						</span>
 
 						<h2 className='contact__section__container__content__form-header'>
 							Contact me form
