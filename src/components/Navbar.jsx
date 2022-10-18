@@ -84,7 +84,7 @@ const Navbar = () => {
 							to='/contact'>
 							Contact me
 						</NavLink>
-						{/* <NavLink
+						 <NavLink
 							className={`${isNavActive ? 'nav-active' : 'navbar'}__items__item`}
 							to='/podcast'>
 							Podcast
