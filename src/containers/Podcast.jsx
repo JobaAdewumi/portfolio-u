@@ -7,7 +7,7 @@ const podcast = () => (
 			<div className='home__section__image'>
 				<img
 					className='home__section__image__item'
-					src={require('../assets/images/life2.jpg')}
+					src={require('../assets/images/life.jpg')}
 					alt=''
 				/>
 			</div>
