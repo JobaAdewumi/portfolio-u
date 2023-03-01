@@ -46,7 +46,7 @@ const footer = () => {
 					</a>
 				</li>
 			</ul>
-			<p className='footer__ending'>© 2022 by Joba Adewumi</p>
+			<p className='footer__ending'>© 2023 by Joba Adewumi</p>
 		</footer>
 	);
 };
