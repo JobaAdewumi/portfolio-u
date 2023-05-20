@@ -5,7 +5,7 @@ const footer = () => {
 	return (
 		<footer className='footer'>
 			<Link to='/' className='footer__logo'>
-				JOBA ADEWUMI
+				joba adewumi
 			</Link>
 			<ul className='footer__list'>
 				<li className='footer__list__item'>

@@ -19,8 +19,10 @@
 					padding-right: 10px;
 				}
 				&__header {
-					font-size: 50px;
-					font-family: 'Times New Roman', Times, serif;
+					font-weight: 300;
+					font-variant: small-caps;
+					font-size: 43px;
+					font-family: bebas-neue, sans-serif;
 					color: $color-accent;
 				}
 
@@ -51,8 +53,10 @@
 					padding-top: 20px;
 					padding-bottom: 10px;
 					font-size: 36px;
+					font-weight: 300;
 					text-align: center;
-					font-family: cursive;
+					font-variant: small-caps;
+					font-family: bebas-neue, sans-serif;
 					color: $color-secondary;
 				}
 
@@ -105,7 +109,6 @@
 							caret-color: $color-primary;
 							background-color: $color-grey-light;
 							border-radius: 0.4rem;
-
 							resize: none;
 							width: 330px;
 							border-radius: 14px;

@@ -6,7 +6,7 @@
 			padding: 10px 40px;
 			@media screen and (max-width: 403px) {
 				justify-content: center;
-				padding: 10px 10px
+				padding: 10px 10px;
 			}
 
 			&__item {
@@ -26,18 +26,6 @@
 				padding-bottom: 0;
 				padding-left: 10px;
 				padding-right: 10px;
-				// @media (max-width: 663px) {
-				// 	padding-left: 57px;
-				// 	padding-right: 57px;
-				// }
-				// @media (max-width: 468px) {
-				// 	padding-left: 25px;
-				// 	padding-right: 25px;
-				// }
-				// @media (max-width: 312px) {
-				// 	padding-top: 65px;
-				// }
-				// background-color: rgba(28, 42, 54, 0.555);
 
 				&__content {
 					border-radius: 24px;
@@ -53,9 +41,11 @@
 						font-size: 23px;
 					}
 					&__header {
-						font-size: 44px;
+						font-size: 40px;
+						font-weight: 300;
 						text-align: center;
-						font-family: serif;
+						font-family: bebas-neue, sans-serif;
+						font-variant: small-caps;
 						color: aliceblue;
 						margin-top: 25px;
 						margin-bottom: 25px;
@@ -63,174 +53,84 @@
 							font-size: 26px;
 						}
 					}
+
+					&__icon {
+						margin: 5px;
+						height: 35px;
+						font-size: 45px;
+						color: $color-accent;
+
+					}
+
 					&__skill-list {
+						display: flex;
+						// flex-direction: column;
+						flex-wrap: wrap;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
 						&__item {
+							border-radius: 8px;
+							margin-top: 10px;
+							margin-bottom: 10px;
+							padding: 5px;
+							width: 300px;
+							height: 150px;
+							border: 2px solid #8fb99b;
+							margin-left: 5px;
+							margin-right: 5px;
 							&__text {
 								font-size: 23px;
 								color: #cfcfcf;
-							}
-							&__bar {
-								margin-top: 10px;
-								height: 20px;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								&__progress-1 {
-									background-color: rgb(197, 2, 2);
-									height: 20px;
-									border-radius: 10px;
-									width: 90%;
-								}
-								&__progress-2 {
-									background-color: rgb(2, 163, 2);
-									height: 20px;
-									border-radius: 10px;
-									width: 90%;
-								}
-								&__progress-3 {
-									background-color: rgb(8, 8, 167);
-									height: 20px;
-									border-radius: 10px;
-									width: 65%;
-								}
-								&__progress-4 {
-									background-color: rgb(165, 165, 3);
-									height: 20px;
-									border-radius: 10px;
-									width: 85%;
-								}
-								&__progress-5 {
-									background-color: rgb(138, 100, 138);
-									height: 20px;
-									border-radius: 10px;
-									width: 79%;
-								}
-								&__progress-6 {
-									background-color: rgb(6, 118, 146);
-									height: 20px;
-									border-radius: 10px;
-									width: 78%;
-								}
+								text-align: center;
 							}
 						}
 					}
 					&__language-list {
+						display: flex;
+						// flex-direction: column;
+						flex-wrap: wrap;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
 						&__item {
+							border-radius: 8px;
+							margin-top: 10px;
+							margin-bottom: 10px;
+							padding: 5px;
+							width: 173px;
+							height: 95px;
+							border: 2px solid #8fb99b;
+							margin-left: 5px;
+							margin-right: 5px;
 							&__text {
 								font-size: 23px;
 								color: #cfcfcf;
-							}
-							&__bar {
-								margin-top: 10px;
-								height: 20px;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								&__progress-1 {
-									background-color: rgb(197, 161, 2);
-									height: 20px;
-									border-radius: 10px;
-									width: 90%;
-								}
-								&__progress-2 {
-									background-color: rgb(2, 117, 163);
-									height: 20px;
-									border-radius: 10px;
-									width: 90%;
-								}
-								&__progress-3 {
-									background-color: rgb(167, 8, 82);
-									height: 20px;
-									border-radius: 10px;
-									width: 90%;
-								}
-								&__progress-4 {
-									background-color: rgb(165, 68, 3);
-									height: 20px;
-									border-radius: 10px;
-									width: 90%;
-								}
-								&__progress-5 {
-									background-color: rgb(115, 100, 138);
-									height: 20px;
-									border-radius: 10px;
-									width: 80%;
-								}
-								&__progress-6 {
-									background-color: rgb(6, 118, 146);
-									height: 20px;
-									border-radius: 10px;
-									width: 83%;
-								}
-								&__progress-7 {
-									background-color: rgb(6, 146, 92);
-									height: 20px;
-									border-radius: 10px;
-									width: 86%;
-								}
-								&__progress-8 {
-									background-color: rgb(104, 146, 6);
-									height: 20px;
-									border-radius: 10px;
-									width: 82%;
-								}
+								text-align: center;
 							}
 						}
 					}
 					&__tech-list {
+						display: flex;
+						// flex-direction: column;
+						flex-wrap: wrap;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
 						&__item {
+							border-radius: 8px;
+							margin-top: 10px;
+							margin-bottom: 10px;
+							padding: 5px;
+							width: 200px;
+							height: 97px;
+							border: 2px solid #8fb99b;
+							margin-left: 5px;
+							margin-right: 5px;
 							&__text {
 								font-size: 23px;
 								color: #cfcfcf;
-							}
-							&__bar {
-								margin-top: 10px;
-								height: 20px;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								&__progress-1 {
-									background-color: rgb(197, 161, 2);
-									height: 20px;
-									border-radius: 10px;
-									width: 92%;
-								}
-								&__progress-2 {
-									background-color: rgb(2, 117, 163);
-									height: 20px;
-									border-radius: 10px;
-									width: 90%;
-								}
-								&__progress-3 {
-									background-color: rgb(167, 8, 82);
-									height: 20px;
-									border-radius: 10px;
-									width: 86%;
-								}
-								&__progress-4 {
-									background-color: rgb(165, 68, 3);
-									height: 20px;
-									border-radius: 10px;
-									width: 87%;
-								}
-								&__progress-5 {
-									background-color: rgb(115, 100, 138);
-									height: 20px;
-									border-radius: 10px;
-									width: 82%;
-								}
-								&__progress-6 {
-									background-color: rgb(6, 118, 146);
-									height: 20px;
-									border-radius: 10px;
-									width: 87%;
-								}
-								&__progress-7 {
-									background-color: rgb(6, 146, 92);
-									height: 20px;
-									border-radius: 10px;
-									width: 80%;
-								}
+								text-align: center;
 							}
 						}
 					}

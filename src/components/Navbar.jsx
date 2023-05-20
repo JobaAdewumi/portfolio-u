@@ -2,11 +2,6 @@ import React, { Fragment, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-	// const menuIconContainer = document.querySelector(
-	// 	'nav .navbar__list__container'
-	// );
-	// const navContainer = document.querySelector('navbar');
-
 	const [isNavActive, setIsNavActive] = useState(false);
 
 	const nav = () => {
@@ -17,27 +12,6 @@ const Navbar = () => {
 		setIsNavActive(false);
 	};
 
-	// menuIconContainer.addEventListener('click', () => {
-	// 	navContainer.classList.toggle('active');
-	// });
-
-	// const authLinks = (
-	//   <a className='navbar__top__auth__link' onClick={logout} href='#!'>
-	//     Logout
-	//   </a>
-	// );
-
-	// const guestLinks = (
-	//   <Fragment>
-	//     <Link className='navbar__top__auth__link' to='/login'>
-	//       Login
-	//     </Link>
-	//     <Link className='navbar__top__auth__link' to='/signup'>
-	//       Sign up
-	//     </Link>
-	//   </Fragment>
-	// );
-
 	return (
 		<Fragment>
 			<nav className={`${isNavActive ? 'nav-active' : 'navbar'}`}>
@@ -46,7 +20,7 @@ const Navbar = () => {
 						<Link
 							className={`${isNavActive ? 'nav-active' : 'navbar'}__list__logo`}
 							to='/'>
-							JOBA ADEWUMI
+							joba adewumi
 						</Link>
 					</li>
 					<li>
@@ -72,20 +46,28 @@ const Navbar = () => {
 					</li>
 				</ul>
 
-				<ul className={`${isNavActive ? 'nav-active' : 'navbar'}__items`} onClick={isNavActive ? nave : nav}>
+				<ul
+					className={`${isNavActive ? 'nav-active' : 'navbar'}__items`}
+					onClick={isNavActive ? nave : nav}>
 					<li>
 						<NavLink
-							className={`${isNavActive ? 'nav-active' : 'navbar'}__items__item`}
+							className={`${
+								isNavActive ? 'nav-active' : 'navbar'
+							}__items__item`}
 							to='/projects'>
 							Projects
 						</NavLink>
 						<NavLink
-							className={`${isNavActive ? 'nav-active' : 'navbar'}__items__item`}
+							className={`${
+								isNavActive ? 'nav-active' : 'navbar'
+							}__items__item`}
 							to='/contact'>
 							Contact me
 						</NavLink>
-						 <NavLink
-							className={`${isNavActive ? 'nav-active' : 'navbar'}__items__item`}
+						<NavLink
+							className={`${
+								isNavActive ? 'nav-active' : 'navbar'
+							}__items__item`}
 							to='/podcast'>
 							Podcast
 						</NavLink>

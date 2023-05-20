@@ -14,7 +14,7 @@ const podcast = () => (
 			<div className='podcast__section__container'>
 				<div className='podcast__section__container__content'>
 					<h1 className='podcast__section__container__content__header'>
-						Life Podcast
+						life podcast
 					</h1>
 
 					<div className='podcast__section__container__content__iframe'>

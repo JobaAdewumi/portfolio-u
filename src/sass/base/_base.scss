@@ -24,7 +24,7 @@
 
 body {
 	box-sizing: border-box;
-	font-family: bebas-neue, sans-serif;
+	font-family: 'Calibri Light';
 
 	@include respond(phone) {
 		padding: 0;
