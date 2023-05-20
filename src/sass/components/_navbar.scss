@@ -28,16 +28,17 @@
 
 		a,
 		Link {
+			font-variant: small-caps;
 			color: $color-accent;
 			text-decoration: none;
 			font-size: 44px;
 			font-weight: lighter;
 			@include respond(phone) {
-				font-size: 34px;
+				font-size: 39px;
 			}
-			@include respond(med-phone) {
-				font-size: 33px;
-			}
+			// @media only screen and (max-width: 357px) {
+			// 	font-size: 35px;
+			// }
 		}
 
 		&__logo {
@@ -202,17 +203,18 @@
 
 		a,
 		Link {
+			font-variant: small-caps;
 			color: $color-grey-light;
 			text-decoration: none;
 			font-size: 44px;
 			font-weight: lighter;
 			@include respond(phone) {
-				font-size: 34px;
+				font-size: 39px;
 			}
 
-			@include respond(med-phone) {
-				font-size: 33px;
-			}
+			// @include respond(med-phone) {
+			// 	font-size: 33px;
+			// }
 		}
 
 		&__logo {
