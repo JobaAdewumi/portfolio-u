@@ -33,7 +33,7 @@ const Contact = () => {
 				<div className='contact__section__container'>
 					<div className='contact__section__container__content'>
 						<h1 className='contact__section__container__content__header'>
-							Contact Me
+							contact me
 						</h1>
 
 						<h2 className='contact__section__container__content__name'>
@@ -77,7 +77,7 @@ const Contact = () => {
 						</span>
 
 						<h2 className='contact__section__container__content__form-header'>
-							Contact me form
+							contact me form
 						</h2>
 
 						<p className='contact__section__container__content__form-sub'>
