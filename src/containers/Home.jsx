@@ -1,4 +1,26 @@
+import {
+	faComputer,
+	faDatabase,
+	faDesktop,
+	faFileVideo,
+	faMobile,
+	faMobileRetro,
+	faCode,
+	faLaptopCode,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import {
+	FaCss3,
+	FaHtml5,
+	FaGithub,
+	FaPython,
+	FaAngular,
+	FaReact,
+	FaNodeJs,
+	FaAndroid,
+	FaCode,
+} from 'react-icons/fa';
 
 const home = () => {
 	return (
@@ -16,13 +38,14 @@ const home = () => {
 						<section className='home__section__text__container__content'>
 							<p className='home__section__text__container__content__summary'>
 								Joba Adewumi has spent his time learning Software Development
-								which includes Web Design and Development and Application Design
-								and Development, how to make the world a better place with his
-								innovations both in Computer and Information technology and his
-								Software skills. He is the founder of Coding Republic and The
-								Wicked Developers Organization. He is also has interest in
-								photography, snapping images from landscape to portraits. He is
-								also a Graphics designer and Video editor.
+								which includes Web Design and Development and Mobile Application
+								Design and Development, how to make the world a better place
+								with his innovations both in Computer and Information technology
+								and his Software skills. He is also studying philosophy and
+								Stoicism. He is the founder of The Wicked Developers
+								Organization. He is also has interest in photography, snapping
+								images from landscapes to portraits. He is also a Graphics
+								designer and Video editor.
 							</p>
 
 							<iframe
@@ -34,190 +57,178 @@ const home = () => {
 								allowFullScreen='no'
 								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 							<h1 className='home__section__text__container__content__header'>
-								SKILLS
+								skills
 							</h1>
-							<ul className='home__section__text__container__content__skill-list'>
-								<li className='home__section__text__container__content__skill-list__item'>
+							<div className='home__section__text__container__content__skill-list'>
+								<div className='home__section__text__container__content__skill-list__item'>
+									<FontAwesomeIcon
+										icon={faComputer}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__skill-list__item__text'>
 										Frontend Design and Development
 									</p>
-									<div className='home__section__text__container__content__skill-list__item__bar'>
-										<div className='home__section__text__container__content__skill-list__item__bar__progress-1'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__skill-list__item'>
+								</div>
+								<div className='home__section__text__container__content__skill-list__item'>
+									<FontAwesomeIcon
+										icon={faDesktop}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__skill-list__item__text'>
 										Backend Architecture Design and Development
 									</p>
-									<div className='home__section__text__container__content__skill-list__item__bar'>
-										<div className='home__section__text__container__content__skill-list__item__bar__progress-2'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__skill-list__item'>
+								</div>
+								<div className='home__section__text__container__content__skill-list__item'>
+									<FontAwesomeIcon
+										icon={faDatabase}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__skill-list__item__text'>
 										Database Management
 									</p>
-									<div className='home__section__text__container__content__skill-list__item__bar'>
-										<div className='home__section__text__container__content__skill-list__item__bar__progress-3'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__skill-list__item'>
+								</div>
+								<div className='home__section__text__container__content__skill-list__item'>
+									<FontAwesomeIcon
+										icon={faMobile}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__skill-list__item__text'>
 										Mobile App Design and Development(Cross platform)
 									</p>
-									<div className='home__section__text__container__content__skill-list__item__bar'>
-										<div className='home__section__text__container__content__skill-list__item__bar__progress-4'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__skill-list__item'>
+								</div>
+								<div className='home__section__text__container__content__skill-list__item'>
+									<FontAwesomeIcon
+										icon={faMobileRetro}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__skill-list__item__text'>
 										Mobile App Design and Development(Native Android)
 									</p>
-									<div className='home__section__text__container__content__skill-list__item__bar'>
-										<div className='home__section__text__container__content__skill-list__item__bar__progress-5'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__skill-list__item'>
+								</div>
+								<div className='home__section__text__container__content__skill-list__item'>
+									<FontAwesomeIcon
+										icon={faFileVideo}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__skill-list__item__text'>
 										Video Editing and post-production Design and Development
 									</p>
-									<div className='home__section__text__container__content__skill-list__item__bar'>
-										<div className='home__section__text__container__content__skill-list__item__bar__progress-6'></div>
-									</div>
-								</li>
-							</ul>
+								</div>
+							</div>
 
 							<h1 className='home__section__text__container__content__header'>
-								PROGRAMMING LANGUAGES
+								programming languages
 							</h1>
-							<ul className='home__section__text__container__content__language-list'>
-								<li className='home__section__text__container__content__language-list__item'>
+							<div className='home__section__text__container__content__language-list'>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FaHtml5 className='home__section__text__container__content__icon'></FaHtml5>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										HTML
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-1'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__language-list__item'>
+								</div>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FaCss3 className='home__section__text__container__content__icon'></FaCss3>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										CSS
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-2'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__language-list__item'>
+								</div>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FontAwesomeIcon
+										icon={faLaptopCode}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										Javascript
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-3'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__language-list__item'>
+								</div>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FontAwesomeIcon
+										icon={faCode}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										Typescript
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-4'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__language-list__item'>
+								</div>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FaPython className='home__section__text__container__content__icon'></FaPython>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										Python
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-5'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__language-list__item'>
+								</div>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FontAwesomeIcon
+										icon={faComputer}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										Dart
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-6'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__language-list__item'>
+								</div>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FontAwesomeIcon
+										icon={faCode}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										Kotlin
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-7'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__language-list__item'>
+								</div>
+								<div className='home__section__text__container__content__language-list__item'>
+									<FontAwesomeIcon
+										icon={faDatabase}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__language-list__item__text'>
 										SQL
 									</p>
-									<div className='home__section__text__container__content__language-list__item__bar'>
-										<div className='home__section__text__container__content__language-list__item__bar__progress-8'></div>
-									</div>
-								</li>
-							</ul>
+								</div>
+							</div>
 
 							<h1 className='home__section__text__container__content__header'>
-								TECHNOLOGIES
+								technologies
 							</h1>
-							<ul className='home__section__text__container__content__tech-list'>
-								<li className='home__section__text__container__content__tech-list__item'>
+							<div className='home__section__text__container__content__tech-list'>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FaGithub className='home__section__text__container__content__icon'></FaGithub>
 									<p className='home__section__text__container__content__tech-list__item__text'>
 										Git and Github
 									</p>
-									<div className='home__section__text__container__content__tech-list__item__bar'>
-										<div className='home__section__text__container__content__tech-list__item__bar__progress-1'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__tech-list__item'>
+								</div>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FaAngular className='home__section__text__container__content__icon'></FaAngular>
 									<p className='home__section__text__container__content__tech-list__item__text'>
 										Angular
 									</p>
-									<div className='home__section__text__container__content__tech-list__item__bar'>
-										<div className='home__section__text__container__content__tech-list__item__bar__progress-2'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__tech-list__item'>
+								</div>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FaReact className='home__section__text__container__content__icon'></FaReact>
 									<p className='home__section__text__container__content__tech-list__item__text'>
 										React
 									</p>
-									<div className='home__section__text__container__content__tech-list__item__bar'>
-										<div className='home__section__text__container__content__tech-list__item__bar__progress-3'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__tech-list__item'>
+								</div>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FaNodeJs className='home__section__text__container__content__icon'></FaNodeJs>
 									<p className='home__section__text__container__content__tech-list__item__text'>
 										Nestjs
 									</p>
-									<div className='home__section__text__container__content__tech-list__item__bar'>
-										<div className='home__section__text__container__content__tech-list__item__bar__progress-4'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__tech-list__item'>
+								</div>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FontAwesomeIcon
+										icon={faDesktop}
+										className='home__section__text__container__content__icon'></FontAwesomeIcon>
 									<p className='home__section__text__container__content__tech-list__item__text'>
 										Django
 									</p>
-									<div className='home__section__text__container__content__tech-list__item__bar'>
-										<div className='home__section__text__container__content__tech-list__item__bar__progress-5'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__tech-list__item'>
+								</div>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FaCode className='home__section__text__container__content__icon'></FaCode>
 									<p className='home__section__text__container__content__tech-list__item__text'>
 										Flutter
 									</p>
-									<div className='home__section__text__container__content__tech-list__item__bar'>
-										<div className='home__section__text__container__content__tech-list__item__bar__progress-6'></div>
-									</div>
-								</li>
-								<li className='home__section__text__container__content__tech-list__item'>
+								</div>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FaAndroid className='home__section__text__container__content__icon'></FaAndroid>
 									<p className='home__section__text__container__content__tech-list__item__text'>
 										Native Android
 									</p>
-									<div className='home__section__text__container__content__tech-list__item__bar'>
-										<div className='home__section__text__container__content__tech-list__item__bar__progress-7'></div>
-									</div>
-								</li>
-							</ul>
+								</div>
+								<div className='home__section__text__container__content__tech-list__item'>
+									<FaNodeJs className='home__section__text__container__content__icon'></FaNodeJs>
+									<p className='home__section__text__container__content__tech-list__item__text'>
+										Nextjs
+									</p>
+								</div>
+							</div>
 						</section>
 					</section>
 				</div>
