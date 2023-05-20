@@ -192,31 +192,31 @@ const Projects = () => {
 				<div className='projects__section__container'>
 					<div className='projects__section__container__content'>
 						<h1 className='projects__section__container__content__header'>
-							Projects
+							projects
 						</h1>
 						<ul>
-							<li>
+							<li style={{ listStyle: 'none' }}>
 								<a
 									className='projects__section__container__content__links'
 									href='#first'>
 									All Status Saver &rarr;
 								</a>
 							</li>
-							<li>
+							<li style={{ listStyle: 'none' }}>
 								<a
 									className='projects__section__container__content__links'
 									href='#second'>
 									Linkedin Clone &rarr;
 								</a>
 							</li>
-							<li>
+							<li style={{ listStyle: 'none' }}>
 								<a
 									className='projects__section__container__content__links'
 									href='#third'>
 									Unit Converter &rarr;
 								</a>
 							</li>
-							<li>
+							<li style={{ listStyle: 'none' }}>
 								<a
 									className='projects__section__container__content__links'
 									href='#fourth'>
@@ -236,4 +236,3 @@ const Projects = () => {
 	);
 };
 export default Projects;
-

@@ -1,14 +1,11 @@
 .projects {
 	margin-top: 30px;
 	&__section {
-
 		&__container {
 			padding-top: 26px;
 			padding-bottom: 0;
 			padding-left: 10px;
 			padding-right: 10px;
-
-
 
 			&__content {
 				border-radius: 24px;
@@ -18,20 +15,23 @@
 				padding-top: 18px;
 				padding-bottom: 30px;
 				&__header {
-					font-size: 50px;
-					font-family: 'Times New Roman', Times, serif;
+					font-variant: small-caps;
+					font-size: 43px;
+					font-weight: 300;
+					font-family: bebas-neue, sans-serif;
 					color: $color-accent;
 					margin-bottom: 5px;
 				}
 
 				&__links {
+					list-style: none;
 					padding-left: 10px;
 					font-size: 20px;
 					color: $color-quaternary;
 				}
 
 				&__name-back {
-                    background-color: rgba(22, 22, 22, 0.83);
+					background-color: rgba(22, 22, 22, 0.83);
 					&__name {
 						padding-top: 15px;
 						padding-bottom: 10px;
@@ -63,8 +63,11 @@
 					background-color: rgba(22, 22, 22, 0.83);
 
 					&__header {
-						font-size: 43px;
-						font-family: 'Times New Roman', Times, serif;
+						font-size: 34px;
+						margin-top: 5px;
+						margin-bottom: 5px;
+						font-weight: 300;
+						font-family: bebas-neue, sans-serif;
 						margin-left: 15px;
 					}
 
