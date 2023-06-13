@@ -1,25 +1,25 @@
 import {
+	faCode,
 	faComputer,
 	faDatabase,
 	faDesktop,
 	faFileVideo,
+	faLaptopCode,
 	faMobile,
 	faMobileRetro,
-	faCode,
-	faLaptopCode,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import {
-	FaCss3,
-	FaHtml5,
-	FaGithub,
-	FaPython,
-	FaAngular,
-	FaReact,
-	FaNodeJs,
 	FaAndroid,
+	FaAngular,
 	FaCode,
+	FaCss3,
+	FaGithub,
+	FaHtml5,
+	FaNodeJs,
+	FaPython,
+	FaReact,
 } from 'react-icons/fa';
 
 const home = () => {
@@ -56,6 +56,7 @@ const home = () => {
 								frameBorder='0'
 								allowFullScreen='no'
 								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
+
 							<h1 className='home__section__text__container__content__header'>
 								skills
 							</h1>
@@ -229,6 +230,14 @@ const home = () => {
 									</p>
 								</div>
 							</div>
+
+								<iframe
+								src='https://jobaadewumi.substack.com/embed'
+								width='100%'
+								height='232'
+								style={{ marginTop: '20px', borderRadius: '12px', border: '1px solid #8fb99b' }}
+								allowFullScreen='no'
+								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 						</section>
 					</section>
 				</div>
