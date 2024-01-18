@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLink, FaLinkedin, FaMusic, FaPen, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLink, FaLinkedin, FaPen, FaSpotify, FaTwitter } from 'react-icons/fa';
 // import { FaLink } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -70,7 +70,7 @@ const footer = () => {
 						target='_blank'
 						rel='noreferrer'
 						className='footer__list__item__whatsapp'>
-						<FaMusic className='footer__list__item__icon'></FaMusic>
+						<FaSpotify className='footer__list__item__icon'></FaSpotify>
 					</a>
 				</li>
 			</ul>
