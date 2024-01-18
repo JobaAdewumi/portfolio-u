@@ -12,6 +12,8 @@
 
 			&__item {
 				height: 73vh;
+				border-radius: 12px;
+
 				@media screen and (max-width: 601px) {
 					height: 44vh;
 				}
