@@ -1,6 +1,6 @@
 import { send } from 'emailjs-com';
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const Contact = () => {
@@ -44,7 +44,7 @@ const Contact = () => {
 							theme='dark'
 							tweetLimit={5}
 							sourceType='widget'
-							screenName='_Jobaa'
+							screenName='@jbtheinspirer'
 							options={{ height: 400 }}
 						/>
 						<h2 className='contact__section__container__content__name'>
@@ -76,6 +76,20 @@ const Contact = () => {
 							</a>
 						</span>
 
+						<h2 className='contact__section__container__content__name'>
+							Instagram
+						</h2>
+						<span className='contact__section__container__content__span'>
+							<FaInstagram className='podcast__section__container__content__span__icon'></FaInstagram>
+							<a
+								href='https://instagram/jbtheinspirer'
+								className='contact__section__container__content__item'
+								target='_blank'
+								rel='noreferrer'>
+								Instagram &rarr;
+							</a>
+						</span>
+
 						<h2 className='contact__section__container__content__form-header'>
 							contact me form
 						</h2>
@@ -90,7 +104,7 @@ const Contact = () => {
 								className='contact__section__container__content__form-container__form'
 								onSubmit={onSubmit}>
 								<p className='contact__section__container__content__form-container__form__label'>
-									FullName
+									Full Name
 								</p>
 								<input
 									className='contact__section__container__content__form-container__form__input'
@@ -127,7 +141,7 @@ const Contact = () => {
 								</p>
 								<textarea
 									className='contact__section__container__content__form-container__form__textarea'
-									rows='10'
+									rows='4'
 									type='text'
 									value={formData.message}
 									onChange={handleChange}
