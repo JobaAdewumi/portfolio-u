@@ -44,6 +44,18 @@ const home = () => {
 							<Languages />
 
 							<Technologies />
+
+							<iframe
+								src='https://jobaadewumi.substack.com/embed'
+								width='100%'
+								height='232'
+								style={{
+									marginTop: '20px',
+									borderRadius: '12px',
+									border: '1px solid #8fb99b',
+								}}
+								allowFullScreen='no'
+								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 						</section>
 					</section>
 				</div>
