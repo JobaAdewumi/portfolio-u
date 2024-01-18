@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 	const [isNavActive, setIsNavActive] = useState(false);
+	const [changeLogo, setChangeLogo] = useState(false);
 
 	const nav = () => {
 		setIsNavActive(true);
@@ -12,15 +13,27 @@ const Navbar = () => {
 		setIsNavActive(false);
 	};
 
+	const logoChange = () => {
+		changeLogo ? setChangeLogo(false) : setChangeLogo(true);
+	};
+
 	return (
 		<Fragment>
 			<nav className={`${isNavActive ? 'nav-active' : 'navbar'}`}>
 				<ul className={`${isNavActive ? 'nav-active' : 'navbar'}__list`}>
-					<li>
+					<li onMouseEnter={logoChange}>
 						<Link
-							className={`${isNavActive ? 'nav-active' : 'navbar'}__list__logo`}
+							className={`${
+								isNavActive ? 'nav-active' : 'navbar'
+							}__list__logo ${changeLogo ? 'opacity' : ''}`}
 							to='/'>
 							joba adewumi
+						</Link>
+
+						<Link
+							className={`change ${changeLogo ? '' : 'opacity'}`}
+							to='/'>
+							jbtheinspirer
 						</Link>
 					</li>
 					<li>

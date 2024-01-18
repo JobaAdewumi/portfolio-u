@@ -95,6 +95,7 @@
 					transition-property: transform, top;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
+					border-radius: 8px;
 				}
 
 				&__line-1 {
@@ -269,6 +270,7 @@
 					transition-property: transform, top;
 					transition-delay: 0ms, 160ms;
 					transition-duration: 200ms;
+					border-radius: 8px;
 				}
 
 				&__line-1 {
@@ -343,4 +345,35 @@
 	&:hover {
 		color: $color-white;
 	}
+}
+
+.change {
+	@include respond(med-phone) {
+		height: 44px;
+	}
+	display: block;
+	background-position: center;
+	height: 54px;
+	padding-right: 7px;
+	background-repeat: no-repeat;
+	// font-family: 'Times New Roman', Times, serif;
+	cursor: pointer;
+	transition-delay: 400ms;
+	transition-duration: 400ms;
+	@media screen and (max-width: 600px) {
+		padding-top: 4px;
+	}
+
+	&:hover {
+		color: rgb(75, 158, 151);
+		transition-delay: 400ms;
+		transition-duration: 400ms;
+	}
+}
+
+.opacity {
+	transition-delay: 400ms;
+	transition-duration: 400ms;
+
+	display: none;
 }
