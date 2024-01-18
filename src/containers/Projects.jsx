@@ -9,7 +9,7 @@ const Projects = () => {
 				"The All Status Saver project is a mobile application created with Flutter. The App is a WhatsApp Status Saver, other social media's will be added later on.",
 			timelineBeginning: 'August 1 2022',
 			timelineEnd: 'To Date',
-			githubLink: 'private',
+			githubLink: 'Private',
 			inBeta: true,
 			packaged: true,
 			downloadLink: '',
@@ -45,7 +45,7 @@ const Projects = () => {
 				'The Unit Converter project is a Cross platform Mobile application made with Flutter.',
 			timelineBeginning: 'December 13 2021',
 			timelineEnd: 'February 2 2022',
-			githubLink: 'private',
+			githubLink: 'Private',
 			inBeta: true,
 			packaged: true,
 			downloadLink: '',
@@ -63,7 +63,7 @@ const Projects = () => {
 				'The McFlow project is a Full stack Web application created with Angular, Angular Material and Nestjs.',
 			timelineBeginning: 'December 30 2021',
 			timelineEnd: 'April 24 2022',
-			githubLink: 'private',
+			githubLink: 'Private',
 			inBeta: false,
 			packaged: false,
 			downloadLink: '',
@@ -106,7 +106,7 @@ const Projects = () => {
 					<h2 className='projects__section__container__content__about__header'>
 						Github Repository link:
 					</h2>
-					{e.githubLink === 'private' ? (
+					{e.githubLink === 'Private' ? (
 						<p className='projects__section__container__content__about__text'>
 							{e.githubLink}
 						</p>
@@ -118,7 +118,7 @@ const Projects = () => {
 						</a>
 					)}
 
-					{e.inBeta && e.githubLink === 'private' ? (
+					{e.inBeta && e.githubLink === 'Private' ? (
 						<>
 							<h2 className='projects__section__container__content__about__header'>
 								In Beta:
@@ -128,7 +128,7 @@ const Projects = () => {
 								able to use the project.
 							</p>
 						</>
-					) : e.inBeta && e.githubLink !== 'private' ? (
+					) : e.inBeta && e.githubLink !== 'Private' ? (
 						<>
 							<h2 className='projects__section__container__content__about__header'>
 								In Beta:
