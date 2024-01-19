@@ -1,8 +1,32 @@
+
 import React from 'react';
 import SEOComponent from '../components/SEO';
 import Languages from '../components/languages';
 import Skills from '../components/skills';
 import Technologies from '../components/technologies';
+import {
+	faCode,
+	faComputer,
+	faDatabase,
+	faDesktop,
+	faFileVideo,
+	faLaptopCode,
+	faMobile,
+	faMobileRetro,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import {
+	FaAndroid,
+	FaAngular,
+	FaCode,
+	FaCss3,
+	FaGithub,
+	FaHtml5,
+	FaNodeJs,
+	FaPython,
+	FaReact,
+} from 'react-icons/fa';
 
 const home = () => {
 	const pageTitle = "Joba Adewumi's Portfolio - Home";
@@ -54,21 +78,17 @@ const home = () => {
 								allowFullScreen='no'
 								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 
+
 							<Skills />
 
 							<Languages />
 
 							<Technologies />
-
-							<iframe
+								<iframe
 								src='https://jobaadewumi.substack.com/embed'
 								width='100%'
 								height='232'
-								style={{
-									marginTop: '20px',
-									borderRadius: '12px',
-									border: '1px solid #8fb99b',
-								}}
+								style={{ marginTop: '20px', borderRadius: '12px', border: '1px solid #8fb99b' }
 								allowFullScreen='no'
 								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 						</section>
