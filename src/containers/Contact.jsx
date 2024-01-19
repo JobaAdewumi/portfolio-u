@@ -2,8 +2,18 @@ import { send } from 'emailjs-com';
 import React, { useState } from 'react';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import SEOComponent from '../components/SEO';
 
 const Contact = () => {
+	const pageTitle = "Joba Adewumi's Portfolio - Contact";
+	const pageDescription =
+		'Check out my social media handles of contact me directly';
+	const pageKeywords =
+		'Joba Adewumi, Joba, jbtheinspirer, Software dev, github, linkedin, instagram, web developer, mobile developer, x, twitter';
+	const pageImageUrl = 'https://jobaadewumi.vercel.app/assets/images/joba2.jpg'; // URL to an image for social media sharing
+	const pageUrl = 'https://jobaadewumi.vercel.app/contact';
+
+
 	const [formData, setFormData] = useState({
 		fullname: '',
 		email: '',
@@ -29,6 +39,13 @@ const Contact = () => {
 
 	return (
 		<div className='contact'>
+			<SEOComponent
+				title={pageTitle}
+				description={pageDescription}
+				keywords={pageKeywords}
+				imageUrl={pageImageUrl}
+				url={pageUrl}
+			/>
 			<section className='contact__section'>
 				<div className='contact__section__container'>
 					<div className='contact__section__container__content'>

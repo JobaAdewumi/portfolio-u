@@ -1,6 +1,15 @@
 import React from 'react';
+import SEOComponent from '../components/SEO';
 
 const Projects = () => {
+	const pageTitle = "Joba Adewumi's Portfolio - Projects";
+	const pageDescription =
+		'Here are some of the sample projects i have worked on';
+	const pageKeywords =
+		'Joba Adewumi, Joba, jbtheinspirer, Software dev, all status saver, linkedin clone, unit converter, web developer, mobile developer, projects, github';
+	const pageImageUrl = 'https://jobaadewumi.vercel.app/assets/images/joba2.jpg'; // URL to an image for social media sharing
+	const pageUrl = 'https://jobaadewumi.vercel.app/projects';
+
 	var rows = [];
 	const projectData = {
 		0: {
@@ -188,6 +197,13 @@ const Projects = () => {
 
 	return (
 		<div className='projects'>
+			<SEOComponent
+				title={pageTitle}
+				description={pageDescription}
+				keywords={pageKeywords}
+				imageUrl={pageImageUrl}
+				url={pageUrl}
+			/>
 			<section className='projects__section'>
 				<div className='projects__section__container'>
 					<div className='projects__section__container__content'>

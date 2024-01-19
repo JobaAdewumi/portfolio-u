@@ -1,11 +1,26 @@
 import React from 'react';
+import SEOComponent from '../components/SEO';
 import Languages from '../components/languages';
 import Skills from '../components/skills';
 import Technologies from '../components/technologies';
 
 const home = () => {
+	const pageTitle = "Joba Adewumi's Portfolio - Home";
+	const pageDescription =
+		'A short biography of Joba Adewumi, his list of skills, programming languages and technologies used';
+	const pageKeywords =
+		"Joba Adewumi, Joba, jbtheinspirer, Software dev, photographer, podcaster, podcast, web developer, mobile developer, writer, Joba's Thoughts, Life";
+	const pageImageUrl = 'https://jobaadewumi.vercel.app/assets/images/joba2.jpg'; // URL to an image for social media sharing
+	const pageUrl = 'https://jobaadewumi.vercel.app/';
 	return (
 		<div className='home'>
+			<SEOComponent
+				title={pageTitle}
+				description={pageDescription}
+				keywords={pageKeywords}
+				imageUrl={pageImageUrl}
+				url={pageUrl}
+			/>
 			<section className='home__section'>
 				<div className='home__section__image'>
 					<img
