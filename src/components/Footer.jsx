@@ -1,11 +1,17 @@
 import React from 'react';
+import { FaGithub, FaLink, FaLinkedin, FaPen, FaSpotify, FaTwitter } from 'react-icons/fa';
+// import { FaLink } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const footer = () => {
 	return (
 		<footer className='footer'>
 			<Link to='/' className='footer__logo'>
-				joba adewumi
+				<img
+					className='footer__logo__img'
+					src={require('../assets/images/logo.png')}
+					alt=''
+				/>
 			</Link>
 			<ul className='footer__list'>
 				<li className='footer__list__item'>
@@ -14,16 +20,18 @@ const footer = () => {
 						target='_blank'
 						rel='noreferrer'
 						className='footer__list__item__linkedin'>
-						Linkedin
+						<FaLinkedin className='footer__list__item__icon'>
+
+						</FaLinkedin>
 					</a>
 				</li>
 				<li className='footer__list__item'>
 					<a
-						href='https://twitter.com/_Jobaa'
+						href='https://twitter.com/jbtheinspirer'
 						target='_blank'
 						rel='noreferrer'
 						className='footer__list__item__twitter'>
-						Twitter
+						<FaTwitter className='footer__list__item__icon'></FaTwitter>
 					</a>
 				</li>
 				<li className='footer__list__item'>
@@ -32,7 +40,7 @@ const footer = () => {
 						target='_blank'
 						rel='noreferrer'
 						className='footer__list__item__github'>
-						Github
+						<FaGithub className='footer__list__item__icon'></FaGithub>
 					</a>
 				</li>
 
@@ -42,11 +50,31 @@ const footer = () => {
 						target='_blank'
 						rel='noreferrer'
 						className='footer__list__item__whatsapp'>
-						Linktree
+						<FaLink className='footer__list__item__icon'></FaLink>
+					</a>
+				</li>
+
+				<li className='footer__list__item'>
+					<a
+						href='https://jobaadewumi.substack.com'
+						target='_blank'
+						rel='noreferrer'
+						className='footer__list__item__whatsapp'>
+						<FaPen className='footer__list__item__icon'></FaPen>
+					</a>
+				</li>
+
+				<li className='footer__list__item'>
+					<a
+						href='https://podcasters.spotify.com/pod/show/joba-adewumi4'
+						target='_blank'
+						rel='noreferrer'
+						className='footer__list__item__whatsapp'>
+						<FaSpotify className='footer__list__item__icon'></FaSpotify>
 					</a>
 				</li>
 			</ul>
-			<p className='footer__ending'>© 2023 by Joba Adewumi</p>
+			<p className='footer__ending'>© 2024 by Joba Adewumi</p>
 		</footer>
 	);
 };

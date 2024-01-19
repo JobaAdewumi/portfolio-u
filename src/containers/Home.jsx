@@ -1,3 +1,9 @@
+
+import React from 'react';
+import SEOComponent from '../components/SEO';
+import Languages from '../components/languages';
+import Skills from '../components/skills';
+import Technologies from '../components/technologies';
 import {
 	faCode,
 	faComputer,
@@ -23,13 +29,27 @@ import {
 } from 'react-icons/fa';
 
 const home = () => {
+	const pageTitle = "Joba Adewumi's Portfolio - Home";
+	const pageDescription =
+		'A short biography of Joba Adewumi, his list of skills, programming languages and technologies used';
+	const pageKeywords =
+		"Joba Adewumi, Joba, jbtheinspirer, Software dev, photographer, podcaster, podcast, web developer, mobile developer, writer, Joba's Thoughts, Life";
+	const pageImageUrl = 'https://jobaadewumi.vercel.app/assets/images/joba2.jpg'; // URL to an image for social media sharing
+	const pageUrl = 'https://jobaadewumi.vercel.app/';
 	return (
 		<div className='home'>
+			<SEOComponent
+				title={pageTitle}
+				description={pageDescription}
+				keywords={pageKeywords}
+				imageUrl={pageImageUrl}
+				url={pageUrl}
+			/>
 			<section className='home__section'>
 				<div className='home__section__image'>
 					<img
 						className='home__section__image__item'
-						src={require('../assets/images/Joba.jpg')}
+						src={require('../assets/images/joba2.jpg')}
 						alt=''
 					/>
 				</div>
@@ -38,14 +58,15 @@ const home = () => {
 						<section className='home__section__text__container__content'>
 							<p className='home__section__text__container__content__summary'>
 								Joba Adewumi has spent his time learning Software Development
-								which includes Web Design and Development and Mobile Application
-								Design and Development, how to make the world a better place
-								with his innovations both in Computer and Information technology
-								and his Software skills. He is also studying philosophy and
-								Stoicism. He is the founder of The Wicked Developers
-								Organization. He is also has interest in photography, snapping
-								images from landscapes to portraits. He is also a Graphics
-								designer and Video editor.
+								which includes Web and Mobile Design and Development, how to
+								make the world a better place with his innovations both in
+								Software skills and his podcast and writing. He is also studying
+								philosophy and Stoicism. He is also a in photographer, snapping
+								images from landscapes to portraits, video editor, chopping up
+								his inspirational videos, podcaster, recording his thoughts for
+								the world to perceive a different view and his writing, where he
+								carries us to a different dimension of self-reflection with
+								words.
 							</p>
 
 							<iframe
@@ -57,185 +78,17 @@ const home = () => {
 								allowFullScreen='no'
 								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 
-							<h1 className='home__section__text__container__content__header'>
-								skills
-							</h1>
-							<div className='home__section__text__container__content__skill-list'>
-								<div className='home__section__text__container__content__skill-list__item'>
-									<FontAwesomeIcon
-										icon={faComputer}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__skill-list__item__text'>
-										Frontend Design and Development
-									</p>
-								</div>
-								<div className='home__section__text__container__content__skill-list__item'>
-									<FontAwesomeIcon
-										icon={faDesktop}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__skill-list__item__text'>
-										Backend Architecture Design and Development
-									</p>
-								</div>
-								<div className='home__section__text__container__content__skill-list__item'>
-									<FontAwesomeIcon
-										icon={faDatabase}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__skill-list__item__text'>
-										Database Management
-									</p>
-								</div>
-								<div className='home__section__text__container__content__skill-list__item'>
-									<FontAwesomeIcon
-										icon={faMobile}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__skill-list__item__text'>
-										Mobile App Design and Development(Cross platform)
-									</p>
-								</div>
-								<div className='home__section__text__container__content__skill-list__item'>
-									<FontAwesomeIcon
-										icon={faMobileRetro}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__skill-list__item__text'>
-										Mobile App Design and Development(Native Android)
-									</p>
-								</div>
-								<div className='home__section__text__container__content__skill-list__item'>
-									<FontAwesomeIcon
-										icon={faFileVideo}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__skill-list__item__text'>
-										Video Editing and post-production Design and Development
-									</p>
-								</div>
-							</div>
 
-							<h1 className='home__section__text__container__content__header'>
-								programming languages
-							</h1>
-							<div className='home__section__text__container__content__language-list'>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FaHtml5 className='home__section__text__container__content__icon'></FaHtml5>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										HTML
-									</p>
-								</div>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FaCss3 className='home__section__text__container__content__icon'></FaCss3>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										CSS
-									</p>
-								</div>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FontAwesomeIcon
-										icon={faLaptopCode}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										Javascript
-									</p>
-								</div>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FontAwesomeIcon
-										icon={faCode}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										Typescript
-									</p>
-								</div>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FaPython className='home__section__text__container__content__icon'></FaPython>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										Python
-									</p>
-								</div>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FontAwesomeIcon
-										icon={faComputer}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										Dart
-									</p>
-								</div>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FontAwesomeIcon
-										icon={faCode}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										Kotlin
-									</p>
-								</div>
-								<div className='home__section__text__container__content__language-list__item'>
-									<FontAwesomeIcon
-										icon={faDatabase}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__language-list__item__text'>
-										SQL
-									</p>
-								</div>
-							</div>
+							<Skills />
 
-							<h1 className='home__section__text__container__content__header'>
-								technologies
-							</h1>
-							<div className='home__section__text__container__content__tech-list'>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FaGithub className='home__section__text__container__content__icon'></FaGithub>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										Git and Github
-									</p>
-								</div>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FaAngular className='home__section__text__container__content__icon'></FaAngular>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										Angular
-									</p>
-								</div>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FaReact className='home__section__text__container__content__icon'></FaReact>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										React
-									</p>
-								</div>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FaNodeJs className='home__section__text__container__content__icon'></FaNodeJs>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										Nestjs
-									</p>
-								</div>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FontAwesomeIcon
-										icon={faDesktop}
-										className='home__section__text__container__content__icon'></FontAwesomeIcon>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										Django
-									</p>
-								</div>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FaCode className='home__section__text__container__content__icon'></FaCode>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										Flutter
-									</p>
-								</div>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FaAndroid className='home__section__text__container__content__icon'></FaAndroid>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										Native Android
-									</p>
-								</div>
-								<div className='home__section__text__container__content__tech-list__item'>
-									<FaNodeJs className='home__section__text__container__content__icon'></FaNodeJs>
-									<p className='home__section__text__container__content__tech-list__item__text'>
-										Nextjs
-									</p>
-								</div>
-							</div>
+							<Languages />
 
+							<Technologies />
 								<iframe
 								src='https://jobaadewumi.substack.com/embed'
 								width='100%'
 								height='232'
-								style={{ marginTop: '20px', borderRadius: '12px', border: '1px solid #8fb99b' }}
+								style={{ marginTop: '20px', borderRadius: '12px', border: '1px solid #8fb99b' }
 								allowFullScreen='no'
 								allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'></iframe>
 						</section>

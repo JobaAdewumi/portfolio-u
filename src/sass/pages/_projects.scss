@@ -92,8 +92,9 @@
 
 						&__image {
 							margin: 10px 10px;
-							width: 100%
-
+							max-width: 500px;
+							max-height: 500px;
+							overflow: hidden;
 						}
 					}
 				}
