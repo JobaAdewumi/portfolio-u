@@ -61,9 +61,10 @@ const Contact = () => {
 							theme='dark'
 							tweetLimit={5}
 							sourceType='widget'
-							screenName='@jbtheinspirer'
+							screenName='jbtheinspirer'
 							options={{ height: 400 }}
 						/>
+						<a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 						<h2 className='contact__section__container__content__name'>
 							Linkedin
 						</h2>
